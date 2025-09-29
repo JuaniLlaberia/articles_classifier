@@ -1,0 +1,9 @@
+pandas
+fsspec
+huggingface_hub
+matplotlib
+seaborn
+scikit-learn
+langchain_text_splitters
+langchain_ollama
+xgboost
