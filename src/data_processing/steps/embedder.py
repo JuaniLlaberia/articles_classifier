@@ -1,3 +1,4 @@
+import logging
 import numpy as np
 from tqdm import tqdm
 from pandas import DataFrame
@@ -44,7 +45,7 @@ class Embedder(Step):
             list[list[float]]: List of embeddings
         """
         final_embeddings = []
-        print(f"Total number of records: {len(texts)}")
+        logging.info(f"Total number of records: {len(texts)}")
 
         for start_index in tqdm(range(0, len(texts), batch_size)):
             batch_texts = texts[start_index:start_index + batch_size]
